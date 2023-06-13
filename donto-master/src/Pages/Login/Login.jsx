@@ -40,15 +40,13 @@ const Login = () => {
             })
 
         const data = {
-            "especialidadId": 50,
-            "nombre": email,
-            "anios": 4,
-            "requisito": password
+            "email": email,
+            "password": password
         };
 
         // Enviar la solicitud a la API
-        fetch(`${API}/api/especialidad/actualizar`, {
-            method: 'PUT',
+        fetch(`${API}/login`, {
+            method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },

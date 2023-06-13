@@ -30,7 +30,7 @@ spec:
     spec:
       containers:
       - name: react-docker
-        image: docker.io/shuaishen/frontdonto:06
+        image: docker.io/shuaishen/frontdonto:08
         ports:
         - containerPort: 3000
         env:
